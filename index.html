@@ -929,8 +929,8 @@
 
   <div class="stats">
     <div class="stat">
-      <div class="stat-num teal">20M+</div>
-      <div class="stat-label">College students in India</div>
+      <div class="stat-num teal">50M+</div>
+      <div class="stat-label">School & college students in India</div>
     </div>
     <div class="stat">
       <div class="stat-num coral">76%</div>
@@ -1108,8 +1108,37 @@
             </select>
           </div>
           <div class="form-group">
+            <label>Internship Mode</label>
+            <select name="mode" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Online (remote)</option>
+              <option>Offline (in-person)</option>
+              <option>Hybrid (both)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Hours per week expected</label>
+            <select name="hours" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Less than 5 hours</option>
+              <option>5 to 10 hours</option>
+              <option>10 to 20 hours</option>
+              <option>20 to 40 hours (full time)</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label>What kind of intern are you looking for?</label>
-            <textarea placeholder="e.g. Someone curious about ML research, happy to help with data collection and literature reviews..."></textarea>
+            <textarea name="intern-description" placeholder="e.g. Someone curious about ML research, happy to help with data collection and literature reviews..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Is prior experience required?</label>
+            <select name="experience-required" required>
+              <option value="" disabled selected>Select one</option>
+              <option>No experience needed — we will train</option>
+              <option>Basic knowledge preferred</option>
+              <option>Some prior experience required</option>
+            </select>
           </div>
           <button type="submit" class="submit-btn">Claim your founding partner spot →</button>
         </form>
@@ -1147,7 +1176,34 @@
           </div>
           <div class="form-group">
             <label>What are you interested in?</label>
-            <textarea placeholder="e.g. AI research, product design, finance, marketing, coding..."></textarea>
+            <textarea name="interests" placeholder="e.g. AI research, product design, finance, marketing, coding..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Preferred internship mode</label>
+            <select name="mode" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Online (remote)</option>
+              <option>Offline (in-person)</option>
+              <option>Both are fine</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Hours available per week</label>
+            <select name="hours" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Less than 5 hours</option>
+              <option>5 to 10 hours</option>
+              <option>10 to 20 hours</option>
+              <option>20+ hours</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Any previous experience? (projects, clubs, competitions)</label>
+            <textarea name="experience" placeholder="e.g. Built an app for a school project, participated in MUN, did a science fair..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>City you are based in</label>
+            <input type="text" name="city" placeholder="e.g. Bangalore, Mumbai, Delhi..." />
           </div>
           <button type="submit" class="submit-btn">Join the waitlist →</button>
         </form>

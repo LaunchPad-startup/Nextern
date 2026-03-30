@@ -278,6 +278,33 @@
           <label>What are you interested in?</label>
           <textarea name="interests" placeholder="e.g. AI research, product design, finance, marketing, coding..."></textarea>
         </div>
+        <div class="form-group">
+          <label>Preferred internship mode</label>
+          <select name="mode" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Online (remote)</option>
+            <option>Offline (in-person)</option>
+            <option>Both are fine</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Hours available per week</label>
+          <select name="hours" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Less than 5 hours</option>
+            <option>5 to 10 hours</option>
+            <option>10 to 20 hours</option>
+            <option>20+ hours</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Any previous experience? (projects, clubs, competitions)</label>
+          <textarea name="experience" placeholder="e.g. Built an app for a school project, participated in MUN, did a science fair..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>City you are based in</label>
+          <input type="text" name="city" placeholder="e.g. Bangalore, Mumbai, Delhi..." />
+        </div>
         <button type="submit" class="submit-btn">Claim my spot on the waitlist →</button>
       </form>
 
